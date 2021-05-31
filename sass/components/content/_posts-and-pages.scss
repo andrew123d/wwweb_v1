@@ -1,0 +1,496 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 90px 0 40px 0;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.custom-block-page {
+	margin: 40px 0; 
+	.title_1 {
+		font-family: 'Roboto';
+		font-weight: 900;  
+		font-size: 50px;
+		color: $color__background-body;
+		// border-bottom: 5px solid $custom_main_color;
+		background-color: $custom_main_color; 
+
+		h2 {
+			margin: 0; 
+			font-weight: 900;
+
+			span {
+				font-weight: 400; 
+			}
+		}
+		
+		
+	}
+	.title_2 {
+		font-family: 'Roboto';
+		font-weight: 900;  
+		font-size: 35px;
+		color:  $color__background-body;
+		background-color: $custom_main_color;
+		
+		padding: 45px 15px; 
+		// border-bottom: 4px dotted $custom_main_color;
+		// text-transform: uppercase;
+		
+		h2 {
+			margin: 0; 
+			font-weight: 700;
+
+			span {
+				font-weight: 400;
+			}
+		}
+
+		&_v2 {
+			color:  $custom_main_color;
+			text-align: center; 
+
+			h2 {
+				font-family: 'Roboto';
+				font-weight: 900;  
+				font-size: 35px;
+				color:  $custom_main_color;
+				text-align: center; 
+
+				span {
+					font-weight: 400; 
+				}
+			}
+			
+			
+		}
+	}
+	.title_3 {
+		
+		font-family: 'Roboto';
+		font-weight: 100;		
+		text-transform: uppercase; 
+		color:  $custom_main_color;
+		background-color: $color__background-pre;
+		background-repeat: no-repeat; 
+		background-position: center right;
+		background-size: 100px; 
+		padding: 45px 120px 45px 15px; 
+
+		h3 {
+			font-size: 20px;
+			padding: 40px 0;
+			font-weight: 300;
+		}
+
+		a {
+			&:hover {
+				color: $color__background-body;
+			}
+
+			&:visited {
+				color: $color__background-body;
+			}
+
+			button {
+				padding: 10px 35px 10px 10px; 
+				background-color: $custom_main_color;
+				color: $color__background-body; 
+				text-align: center;
+				background-image: url('http://localhost/remonty/wp-content/uploads/2021/05/icon_arrow_white.png'); 
+				background-position: 95% 50%;
+				background-repeat: no-repeat;
+				background-size: 25px; 
+				margin-bottom: 25px; 
+			}
+		}
+
+		&_v2 {
+			color:  $custom_main_color;
+			text-align: center; 
+
+			h3 {
+				font-weight: 300; 
+				padding: 20px; 
+			}
+		}
+	}
+
+	.image-block {
+		padding: 0 !important; 
+		margin: 0 !important;
+		
+		figure {
+			margin: 0; 
+			img {
+				position: relative; 
+				width: 100%; 
+			}
+		}
+	}
+
+	.content-block {
+		padding: 20px; 
+
+		img {
+			width: 100%; 
+			height: auto; 
+			position: relative; 
+		}
+
+		a {
+			&:hover {
+				color: $custom_main_color;
+			}
+
+			&:visited {
+				color: $custom_main_color;
+			}
+
+			button {
+				padding: 10px 35px 10px 10px; 
+				background-color: $color__background-body;
+				color: $custom_main_color; 
+				text-align: center;
+				background-image: url('http://localhost/remonty/wp-content/uploads/2021/05/icon_arrow_blue.png'); 
+				background-position: 95% 50%;
+				background-repeat: no-repeat;
+				background-size: 25px; 
+				border: 1px solid $custom_main_color;
+				margin-bottom: 25px;
+			}
+		}
+
+		ul {
+			margin: 20px;  
+			padding: 0;
+			
+			li {
+				margin: 5px 0; 
+			}
+		}
+
+		&_v2 {
+			width: 100%; 
+			height: auto;
+			min-height: 500px;  
+			display: grid;			
+  			grid-template-columns: 100%;
+			background-size: cover; 
+			background-position: 50%; 
+			background-repeat: no-repeat; 
+			background-attachment: fixed;
+			align-items: center; 
+			justify-items: center;
+
+			.custom-bg-caption {
+				 padding: 25px; 
+				 text-align: center;
+				 background-color: $white_tr_80; 
+				 
+			}
+
+			button {
+				padding: 10px 35px 10px 10px; 
+				background-color: $color__background-body;
+				color: $custom_main_color; 
+				text-align: center;
+				background-image: url('http://localhost/remonty/wp-content/uploads/2021/05/icon_arrow_blue.png'); 
+				background-position: 95% 50%;
+				background-repeat: no-repeat;
+				background-size: 25px; 
+				border: 1px solid $custom_main_color;
+				margin-top: 25px;
+			}
+			// figure {
+			// 	padding: 30px; 
+			// 	margin: 0; 
+
+			// 	img {
+			// 		position: absolute; 
+			// 		top: 0; 
+			// 		left: 0; 
+			// 		width: 100%; 
+			// 		z-index: 2; 
+
+			// 	}
+
+			// 	figcaption {
+			// 		position: relative; 
+			// 		display: block; 
+			// 		width: 100%; 
+			// 		height: auto; 
+			// 		padding: 30px; 
+			// 		z-index: 3; 
+
+			// 	}
+			// }
+		}
+	}
+	.custom-block_btn {}
+	
+
+}
+
+.main-page-image {
+	padding: 0; 
+	display: grid; 
+	grid-template-columns: 100%;
+	min-height: 550px; 
+	background-position: 50%; 
+	background-size: cover; 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	align-items: center;
+   	justify-items: center; 
+
+	div {
+		text-align: center; 
+		font-family: 'Roboto'; 
+		font-size: 27px; 
+		font-weight: 700;
+		color: $color__background-body;
+		padding: 20px; 
+		background-color: $black_tr_60;
+
+		cite {
+			font-size: 22px; 	
+		}
+
+	}
+	// figure {
+	// 	position: relative; 
+	// 	display: block; 
+	// 	width: 100%; 
+	// 	height: auto; 
+	// 	padding: 0;
+	// 	margin: 0; 
+
+	// 	img {
+	// 		position: relative; 
+	// 		width: 100%; 
+	// 		height: auto; 
+
+	// 	}
+	// 	figcaption {
+	// 		position: absolute;
+	// 		width: 100%;  
+	// 		top: 40%; 
+	// 		left: 0; 
+	// 		text-align: center;
+	// 		font-family: 'Roboto'; 
+	// 		font-size: 40px; 
+	// 		font-weight: 700;
+	// 		color: $color__background-body;
+	// 		padding: 20px; 
+	// 		background-color: $black_tr_80;
+
+	// 		cite {
+	// 			font-size: 25px; 	
+	// 		}
+	// 	}
+	// }
+}
+
+.custom-posts-remonty {
+	a {
+		color: $black_tr_100; 
+		text-decoration: none; 
+
+		&:visited {
+			color: $black_tr_100; 
+			text-decoration: none; 
+		}
+
+		&:hover {
+			color: $black_tr_100; 
+			text-decoration: none; 
+		}
+	}
+	figure {
+		background-color: $color__background-pre; 
+		figcaption {
+			padding: 20px; 
+			h3 {
+				font-weight: 700;
+			}
+
+			button {
+				padding: 10px 35px 10px 10px; 
+				background-color: $color__background-body;
+				color: $custom_main_color; 
+				text-align: center;
+				background-image: url('http://localhost/remonty/wp-content/uploads/2021/05/icon_arrow_blue.png'); 
+				background-position: 95% 50%;
+				background-repeat: no-repeat;
+				background-size: 25px; 
+				border: 1px solid $custom_main_color;
+				margin-bottom: 25px;
+			}
+
+		}
+		img {
+
+		}
+	}
+}
+
+.kontakt-page {
+	text-align: left; 
+	figure {
+		width: 100%; 
+		height: auto; 
+	}
+
+	label {
+		display: none; 
+	}
+
+	input {
+		border: none;
+		border-bottom: 2px solid $custom_main_color; 
+		padding: 10px;
+		color:   $custom_main_color !important; 
+		text-transform: uppercase;
+		width: 100%; 
+		 
+		
+		&[type=submit] {
+			padding: 10px 35px 10px 10px;
+			background-color: #fff;
+			color: #1c05fc;
+			text-align: center;
+			background-image: url(http://localhost/remonty/wp-content/uploads/2021/05/icon_arrow_blue.png);
+			background-position: 95% 50%;
+			background-repeat: no-repeat;
+			background-size: 25px;
+			border: 1px solid #1c05fc;
+			margin-bottom: 25px;
+
+		}
+	}
+
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: $custom_main_color;
+		opacity: 1; /* Firefox */
+		text-transform: uppercase; 
+	  }
+	  
+	  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: $custom_main_color;
+		text-transform: uppercase; 
+	  }
+	  
+	  ::-ms-input-placeholder { /* Microsoft Edge */
+		color: $custom_main_color;
+		text-transform: uppercase; 
+	  }
+
+	  textarea {
+		border: 2px solid $custom_main_color;
+		padding: 10px;  
+	  }
+}
+
+.custom-sub-title-page {
+
+
+	&__1 {
+		font-family: 'Roboto';
+		font-weight: 400;		
+		text-transform: uppercase; 
+		color:  $custom_main_color;
+		font-size: 22px; 
+		padding: 40px 0; 
+		text-align: center; 
+
+		a {
+			color: $color__org_1;
+			text-decoration: none; 
+
+			&:visited {
+				color: $color__org_1;
+				text-decoration: none; 
+			}
+
+			&:hover {
+				color: $color__org_1;
+				text-decoration: none; 
+			}
+		}
+	}
+
+	&__2 {
+		font-family: 'Roboto';
+		font-weight: 400;		
+		color:  $color__background-body;
+		font-size: 22px;
+		background-color: $custom_main_color;
+		padding: 40px 20px;
+		text-align: center; 
+		
+		a {
+			color: $color__org_1;
+			text-decoration: none; 
+
+			&:visited {
+				color: $color__org_1;
+				text-decoration: none; 
+			}
+
+			&:hover {
+				color: $color__org_1;
+				text-decoration: none; 
+			}
+		}
+	}
+	
+}
+
+.result-presentation {
+	width: 100%; 
+	height: auto;
+	vertical-align: top;  
+
+	.item {
+		position: relative; 
+		display: inline-block; 
+		text-align: center;
+		max-width: 250px; 
+		margin: 10px;
+		vertical-align: top;
+		
+		figcaption {
+			color: $custom_main_color;
+			font-size: 25px; 
+			font-weight: 300;
+
+			span {
+				font-size: 35px; 
+				font-weight: 900;
+				color: $color__org_1; 
+			}
+		}
+	}
+} 
+
+
+
+

@@ -1,0 +1,275 @@
+.main-navigation {
+	display: block;
+	width: 100%;
+
+	&.toggled {
+
+		.menu-toggle {			
+			background-image: url('http://localhost/remonty/wp-content/uploads/2021/04/close_icon.png');		
+		}
+	}
+
+	ul {
+		display: none;
+		width: 100%; 
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		position: fixed; 
+		z-index: 101; 
+		text-align: center;
+		top: 130px; 
+		right: 0; 
+		background-color: $color__background-body;
+		border: 3px solid  $custom_main_color;
+
+		// li {
+		// 	padding: 10px; 
+		// }
+		
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+			width: 100%; 
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+
+				width: 100%;
+				position: relative; 
+				text-align: center; 
+				
+				
+
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
+
+			a {
+				// width: 200px;
+				//padding: 10px; 
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		position: relative;
+		border-bottom: 1px solid  $custom_main_color;
+		// margin-bottom: 10px; 
+
+		&:hover > a,
+		&.focus > a {
+			background-color: $color__org;
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		padding: 10px; 
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle {
+	width: 25px; 
+	height: 25px; 
+	border: none; 
+	background-image: url('/remonty/wp-content/uploads/2021/04/menu_pl_icon.png');
+	background-position: 50%;
+	background-repeat: no-repeat; 
+	background-size: 25px; 
+	background-color:rgba(0, 0, 0, 0);
+	float:right;
+
+}
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+// @media screen and (min-width: 37.5em) {
+
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+
+// 	.main-navigation ul {
+// 		display: flex;
+// 	}
+// }
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+		
+		a {
+			
+			padding: 10px 20px; 
+			background-image: url('http://localhost/remonty/wp-content/uploads/2021/05/icon_arrow_blue_left.png'); 
+			background-size: 30px; 
+			background-position: left center; 
+			background-repeat: no-repeat;
+		}
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+		a {
+			padding: 10px 20px; 
+			background-image: url('http://localhost/remonty/wp-content/uploads/2021/05/icon_arrow_blue.png'); 
+			background-size: 30px; 
+			background-position: right center; 
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.site-header {
+	z-index: 100; 
+	background-color: $color__background-body; 
+	padding: 0; 
+	border-bottom: 5px solid $custom_main_color; 
+}
+
+.main-logo {
+	text-align: center; 
+	img {
+		position: relative; 
+		max-width: 250px !important; 
+		height: auto; 
+		text-align: center; 
+	}
+
+	a {
+		color: $custom_main_color;
+		text-decoration: none;
+		text-transform: capitalize;
+		font-size: 16px;
+		font-weight: 900;  
+
+		&:hover {
+			color: $custom_main_color;
+			text-decoration: none; 
+		}
+		&:visited {
+			color: $custom_main_color;
+		text-decoration: none; 
+		}
+	}
+}
+
+.menu-content {
+	padding-top: 55px;
+	text-align: right; 
+}
+
+footer {
+	display: block; 
+	width: 100%; 
+	height: auto; 
+	position: relative; 
+	padding: 20px;
+	background-color: $color__background-hr; 
+
+	nav {
+		text-align: left;
+		padding-top: 40px; 
+		ul {
+			list-style-type: none;
+		}
+	}
+}
+
+.sub-menu {
+	width: 100%;
+	position: relative;  
+
+	li {
+		width: 100%;
+		position: relative; 
+		text-align: center; 
+
+		a {
+			width: 100%;
+			position: relative; 
+			text-align: center; 
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu-content  {
+		padding-top: 0;	
+	}
+
+	.menu-toggle {
+		position: fixed;
+		top: 20px; 
+		right: 20px; 
+	}
+
+	footer {
+		nav {
+			text-align: center; 
+			padding-top: 0;
+
+			ul {
+				padding: 0; 
+				margin: 0; 
+			}
+		}
+
+		.copyright-content {
+			p {
+			font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+			font-style: italic !important; 
+			font-size: 12px !important;
+			}
+			
+		}
+	}
+}

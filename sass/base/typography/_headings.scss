@@ -1,0 +1,20 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+
+h1 {
+	font-size: 60px; 
+	margin-top: -40px; 
+	text-align: center; 
+	font-family: 'Roboto'; 
+	color: $custom_main_color;
+	font-weight: 700; 
+	z-index: 10;
+	position: relative;  
+}

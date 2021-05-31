@@ -1,0 +1,76 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	// Make sure select elements fit in widgets.
+	select {
+		max-width: 100%;
+	}
+}
+
+.custom-widget-header {
+	padding-top: 40px; 
+	text-align: center; 
+
+	&.footer-widget {
+		padding: 0;
+		
+		figure {
+			margin: 5px; 
+		}
+	}
+
+	figure {
+		display: inline-block; 
+		text-align: center; 
+
+		a {
+			color: $custom_main_color;
+			text-decoration: none; 
+
+			&:hover {
+				color: $custom_main_color;
+				text-decoration: none; 
+			}
+			&:visited {
+				color: $custom_main_color;
+			text-decoration: none; 
+			}
+		}
+
+		img {
+			max-height: 25px; 
+			width: auto; 
+
+			&.small {
+				max-width: 25px; 
+				height: auto; 
+			}
+		}
+
+		figcaption {
+			padding: 5px;
+			line-height: 17px;
+			font-size: 17px;
+			
+			&.right {
+				float: right; 
+			}
+		}
+		
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.custom-widget-header {
+		padding-top: 0;
+		
+		figure {
+			margin: 5px 0; 
+		}
+	}
+
+	.widget {
+		margin: 0; 
+	}
+}
